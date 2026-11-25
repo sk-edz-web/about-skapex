@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: Replace with your live production domain URL
+Sitemap: https://about-skapex.vercel.app/
