@@ -10,7 +10,7 @@
   <meta name="theme-color" content="#0E0F0D" media="(prefers-color-scheme: dark)">
 
   <!-- TODO: Replace with your live production domain URL -->
-  <link rel="canonical" href="https://skapex.example.com/">
+  <link rel="canonical" href="https://about-skapex.vercel.app/">
 
   <!-- Open Graph / Social Meta -->
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
   <meta property="og:title" content="SK Apex | Digital Agency &amp; Creative Studio in Trichy | skedz">
   <meta property="og:description" content="Smart Digital Solutions &amp; High-Impact Visual Edits. Zero Heavy Overheads. Websites, UPI/WhatsApp e-commerce, apps, and Reels by SK Apex &amp; skedz in Trichy.">
   <!-- TODO: Replace with your live production domain URL -->
-  <meta property="og:url" content="https://skapex.example.com/">
+  <meta property="og:url" content="https://about-skapex.vercel.app/">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card -->
@@ -26,8 +26,9 @@
   <meta name="twitter:title" content="SK Apex | Digital Agency &amp; Creative Studio in Trichy | skedz">
   <meta name="twitter:description" content="Smart Digital Solutions &amp; High-Impact Visual Edits. Zero Heavy Overheads. Websites, UPI/WhatsApp stores, apps, and Reels in Trichy.">
 
-  <!-- Inline SVG Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111210'/%3E%3Cpath d='M18 44L32 18L46 44H38L32 32L26 44H18Z' fill='%23D94E1F'/%3E%3Ccircle cx='32' cy='46' r='3' fill='%23F6F5F0'/%3E%3C/svg%3E">
+  <!-- SK Apex Triangle-S Favicon (matches 1.png emblem) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Cpath d='M32 10L54 50H10L32 10Z' fill='%23FFFFFF'/%3E%3Cpath d='M38 25H26.5C24.5 25 23 26.5 23 28.5C23 30.5 24.5 32 26.5 32H36.5C39 32 41 34 41 36.5C41 39 39 41 36.5 41H16' fill='none' stroke='%23000000' stroke-width='4.5' stroke-linecap='square'/%3E%3C/svg%3E">
+  <link rel="alternate icon" type="image/png" href="1.png">
 
   <!-- Google Fonts: Space Grotesk + Plus Jakarta Sans + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,11 +42,12 @@
     "@graph": [
       {
         "@type": ["Organization", "ProfessionalService", "LocalBusiness"],
-        "@id": "https://skapex.example.com/#organization",
+        "@id": "https://about-skapex.vercel.app/#organization",
         "name": "SK Apex",
         "alternateName": ["skedz", "sk edz", "skapex", "skedz.apex", "Skedz"],
         "description": "SK Apex is a Trichy-based digital agency and creative studio. skedz (skedz.apex) is our creative and development wing delivering custom websites, WhatsApp and UPI e-commerce, apps, and high-retention video edits with zero monthly server costs.",
-        "url": "https://skapex.example.com/",
+        "url": "https://about-skapex.vercel.app/",
+        "telephone": "+919345306572",
         "slogan": "Smart Digital Solutions & High-Impact Visual Edits. Zero Heavy Overheads.",
         "priceRange": "$$",
         "address": {
@@ -70,7 +72,7 @@
           "alternateName": ["skedz.apex", "sk edz", "Skedz"],
           "description": "Creative and development wing of SK Apex focused on web builds, automation tools, and high-retention short-form video edits.",
           "parentOrganization": {
-            "@id": "https://skapex.example.com/#organization"
+            "@id": "https://about-skapex.vercel.app/"
           },
           "sameAs": [
             "https://skedz-portfolio.vercel.app/",
@@ -124,7 +126,7 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://skapex.example.com/#faq",
+        "@id": "https://about-skapex.vercel.app/#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -387,8 +389,7 @@
 
     .wordmark {
       display: inline-flex;
-      align-items: baseline;
-      gap: 0.45rem;
+      gap: 0.55rem;
       font-family: var(--font-display);
       font-weight: 700;
       font-size: 1.35rem;
@@ -398,12 +399,11 @@
       align-items: center;
     }
 
-    .wordmark-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
+    .brand-icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      border-radius: 5px;
     }
 
     .wordmark-sub {
@@ -1036,8 +1036,12 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a href="#" class="wordmark" aria-label="SK Apex home">
+        <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#111210"/>
+          <path d="M32 10L54 50H10L32 10Z" fill="#FFFFFF"/>
+          <path d="M38 25H26.5C24.5 25 23 26.5 23 28.5C23 30.5 24.5 32 26.5 32H36.5C39 32 41 34 41 36.5C41 39 39 41 36.5 41H16" fill="none" stroke="#111210" stroke-width="4.5" stroke-linecap="square"/>
+        </svg>
         <span>SK Apex</span>
-        <span class="wordmark-dot" aria-hidden="true"></span>
         <span class="wordmark-sub">/ skedz</span>
       </a>
 
@@ -1050,8 +1054,7 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- TODO: Replace 9345306572 with your active WhatsApp business number (country code + number, no + or spaces) -->
-      <a href="https://wa.me/9345306572?text=Hi%20SK%20Apex%2C%20I%20would%20like%20to%20discuss%20a%20project." class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/919345306572?text=Hi%20SK%20Apex%2C%20I%20would%20like%20to%20discuss%20a%20project." class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
         WhatsApp us
       </a>
     </div>
@@ -1069,8 +1072,7 @@
           <h1 id="hero-heading">SK Apex, digital agency and creative studio in Trichy. Home of skedz.</h1>
           <p class="hero-tagline">Smart Digital Solutions &amp; High-Impact Visual Edits. Zero Heavy Overheads.</p>
           <div class="hero-actions">
-            <!-- TODO: Replace 9345306572 with your active WhatsApp business number -->
-            <a href="https://wa.me/9345306572?text=Hi%20SK%20Apex%2C%20I%20want%20to%20enquire%20about%20a%20website%2C%20app%2C%20or%20video%20edit." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919345306572?text=Hi%20SK%20Apex%2C%20I%20want%20to%20enquire%20about%20a%20website%2C%20app%2C%20or%20video%20edit." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
               Message on WhatsApp
             </a>
             <a href="https://skedz-portfolio.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
@@ -1298,8 +1300,7 @@
             <h2>Custom quotes, message us</h2>
             <p>Every shop website, POS system, Android app, and monthly reel-editing package is scoped to what you actually need—never padded with unused extras.</p>
           </div>
-          <!-- TODO: Replace 9345306572 with your active WhatsApp business number -->
-          <a href="https://wa.me/9345306572?text=Hi%20SK%20Apex%2C%20can%20I%20get%20a%20custom%20quote%20for%20my%20project%3F" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/919345306572?text=Hi%20SK%20Apex%2C%20can%20I%20get%20a%20custom%20quote%20for%20my%20project%3F" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
             Request a Quote on WhatsApp
           </a>
         </div>
@@ -1444,8 +1445,7 @@
           <p>Reach out in two taps on WhatsApp or Instagram. Available for freelance projects, monthly reel-editing packages, and custom web or app builds.</p>
 
           <div class="contact-links">
-            <!-- TODO: Replace 91XXXXXXXXXX with your active WhatsApp business number -->
-            <a href="https://wa.me/9345306572?text=Hi%20SK%20Apex%2C%20I%20would%20like%20to%20start%20a%20project." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/919345306572?text=Hi%20SK%20Apex%2C%20I%20would%20like%20to%20start%20a%20project." class="btn btn-primary" target="_blank" rel="noopener noreferrer">
               Chat on WhatsApp
             </a>
             <a href="https://www.instagram.com/skedz.apex/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
@@ -1462,6 +1462,10 @@
             <div>
               <dt>Studio &amp; Wing</dt>
               <dd>SK Apex (Parent Studio) &amp; skedz (Creative &amp; Dev Wing)</dd>
+            </div>
+            <div>
+              <dt>WhatsApp &amp; Phone</dt>
+              <dd><a href="https://wa.me/919345306572" target="_blank" rel="noopener noreferrer">+91 93453 06572</a></dd>
             </div>
             <div>
               <dt>Location</dt>
